@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mtncodeofconduct-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/MtnCodeOfConduct/MtnCodeOfConductWebPart.js",
+          "manifest": "./src/webparts/MtnCodeOfConduct/MtnCodeOfConductWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MtnCodeOfConductWebPartStrings": "lib/webparts/MtnCodeOfConduct/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

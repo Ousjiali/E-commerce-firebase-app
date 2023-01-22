@@ -1,0 +1,60 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/mtnlogo.png");
+  background-size: cover;
+  padding: 10rem;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.mtn__banner {
+  width: 65%;
+  height: 550px;
+  border-radius: 0 100% 100% 0 / 50%;
+  position: relative;
+  right: 14%;
+  //   transform: rotate(-180deg);
+  background: #ffcc00;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+.text img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.btnContainer svg {
+  margin-left: 10px;
+}
+
+.text h3 {
+  font-size: 60px;
+}
+
+.text h5 {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.text h1 {
+  font-size: 60px;
+}
+.btnContainer {
+  display: flex;
+  align-self: center;
+  padding: 3rem 5rem;
+  width: 60%;
+  margin-left: 3%;
+}

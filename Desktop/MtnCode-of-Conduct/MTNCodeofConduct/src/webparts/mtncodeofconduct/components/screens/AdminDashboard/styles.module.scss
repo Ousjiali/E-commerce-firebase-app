@@ -1,0 +1,12 @@
+.mtn__dashboardCard {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 40px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.mtn__dashboardCard svg {
+  color: #006993;
+}

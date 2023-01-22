@@ -1,0 +1,75 @@
+.form__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-template-columns: 48% 48%;
+  // justify-content: space-between;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.btnCancel {
+  width: 15%;
+  height: 55px;
+  border-radius: 16px;
+  background-color: black;
+  color: aliceblue;
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+
+.btnSubmit {
+  width: 15%;
+  height: 55px;
+  border-radius: 16px;
+  background-color: #ffc423;
+  margin-left: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__Btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnCancel1 {
+  background-color: red;
+  color: black;
+  padding: 10px 15px;
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnCancel2 {
+  background-color: #ffc423;
+  color: black;
+  padding: 10px 15px;
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.mtnEligibilityGuildline {
+  padding: 1rem;
+}
+
+.mtnEligibilityGuildline p {
+  font-weight: bold;
+}
+
+.mtnEligibilityGuildline span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.mtnEligibilityGuildline h5 {
+  font-weight: 100;
+}

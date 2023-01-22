@@ -1,0 +1,14 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "whichFolder": "subdir",
+    "plusBeta": false,
+    "version": "1.13.1",
+    "libraryName": "MtnCodeOfConduct",
+    "libraryId": "66491517-3992-4c1f-82ff-b4b912347019",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
