@@ -1,0 +1,9 @@
+.candidateById_container {
+  width: 85%;
+  height: auto;
+  display: block;
+  padding: 0.5rem 1rem;
+  float: left;
+  background: whitesmoke;
+  border-radius: 10px;
+}

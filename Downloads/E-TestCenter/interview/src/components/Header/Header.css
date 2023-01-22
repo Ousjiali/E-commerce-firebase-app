@@ -1,0 +1,24 @@
+.nav {
+  background-color: #640ad2;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  height: 20px;
+  color: white;
+  font-size: 19px;
+  margin: auto;
+  padding-top: 3rem;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 340px) {
+  .header {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,102 @@
+
+    [
+        {
+            "section": "619769643f3ecd2d1cec4b0e maths" ,
+            "questions": [
+                {
+                    "_id": "619777811a512c81a157638b",
+                    "question": "Select the true option",
+                    "answers": [
+                        "false",
+                        "false"
+                    ],
+                    "correct_answers": [
+                        "true"
+                    ],
+                    "section": " maths619769643f3ecd2d1cec4b0e",
+                    "createdAt": "2021-11-19T10:08:01.408Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "619777b21a512c81a1576390",
+                    "question": "Select the false option",
+                    "answers": [
+                        "true",
+                        "true"
+                    ],
+                    "correct_answers": [
+                        "false"
+                    ],
+                    "section": "619769643f3ecd2d1cec4b0e",
+                    "createdAt": "2021-11-19T10:08:50.047Z",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "section": "619769d73f3ecd2d1cec4b1b english",
+            "questions": [
+                {
+                    "_id": "6197780d1a512c81a157639b",
+                    "question": "Select the red option",
+                    "answers": [
+                        "blue",
+                        "blue"
+                    ],
+                    "correct_answers": [
+                        "red"
+                    ],
+                    "section": "619769d73f3ecd2d1cec4b1b",
+                    "createdAt": "2021-11-19T10:10:21.023Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "619778381a512c81a15763a0",
+                    "question": "Select the blue option",
+                    "answers": [
+                        "red",
+                        "red"
+                    ],
+                    "correct_answers": [
+                        "blue"
+                    ],
+                    "section": "619769d73f3ecd2d1cec4b1b",
+                    "createdAt": "2021-11-19T10:11:04.512Z",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "section": "619769f13f3ecd2d1cec4b20 yoruba",
+            "questions": [
+                {
+                    "_id": "619778881a512c81a15763a5",
+                    "question": "Select the green option",
+                    "answers": [
+                        "yellow",
+                        "yellow"
+                    ],
+                    "correct_answers": [
+                        "green"
+                    ],
+                    "section": "619769f13f3ecd2d1cec4b20",
+                    "createdAt": "2021-11-19T10:12:24.432Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "619778a61a512c81a15763aa",
+                    "question": "Select the yellow option",
+                    "answers": [
+                        "green",
+                        "green"
+                    ],
+                    "correct_answers": [
+                        "yellow"
+                    ],
+                    "section": "619769f13f3ecd2d1cec4b20",
+                    "createdAt": "2021-11-19T10:12:54.857Z",
+                    "__v": 0
+                }
+            ]
+        }
+    ]

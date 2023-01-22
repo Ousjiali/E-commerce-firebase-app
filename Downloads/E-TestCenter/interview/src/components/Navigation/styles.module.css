@@ -1,0 +1,129 @@
+.navigation {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem 5rem;
+  display: block;
+  background: #5759c6;
+}
+
+.title {
+  width: 30%;
+  height: 4rem;
+  display: block;
+  color: white;
+  padding: auto;
+  float: left;
+}
+
+.title h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.btnContainer {
+  width: 40%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  float: right;
+  padding-top: 1rem;
+}
+
+.btnContainer h3 {
+  color: white;
+  float: left;
+  margin-right: 1rem;
+}
+
+.paddingTop {
+  margin-bottom: 5px;
+  padding-top: 10px;
+  width: auto;
+}
+/* phone-only */
+@media (max-width: 599px) {
+  .navigation_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .title_ {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .title_ h3 {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+  }
+  .btnContainer_ {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    width: 60%;
+  }
+  .paddingTop_ {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    width: auto;
+    font-size: 10px;
+  }
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+}
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 3.5rem;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    width: 60%;
+  }
+  .paddingTop {
+    margin-bottom: 5px;
+    padding-top: 7px;
+    width: auto;
+    font-size: 10px;
+  }
+}
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+}
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* .desktop-up */
+@media (min-width: 1300px) {
+}
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+}

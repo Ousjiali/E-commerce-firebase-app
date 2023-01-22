@@ -1,0 +1,21 @@
+.goBack_btn {
+  padding: 0.5rem;
+}
+
+.question_table {
+  padding: 1rem;
+  width: 100%;
+}
+
+Button {
+  padding-right: 1.5rem;
+}
+
+.chakar_btn {
+  margin-left: 10px;
+  padding: 5% 100%;
+}
+
+.chakar_btn2 {
+  width: 30%;
+}

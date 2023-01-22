@@ -1,0 +1,34 @@
+.editform_conatiner {
+  padding: 1rem;
+}
+
+.test_input {
+  width: 50%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.test_input::placeholder {
+  padding: 0.5rem;
+  margin-left: 10px;
+}
+
+.editform_conatiner input {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+}
+
+.edit_btn {
+  background: rgb(245, 197, 76);
+  color: black;
+  width: 20%;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-left: 15px;
+}

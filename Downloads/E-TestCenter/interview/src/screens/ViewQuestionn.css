@@ -1,0 +1,26 @@
+.view_questionpage {
+    float: left;
+    width: 70%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.viewQuestion_container {
+    width: 85%;
+    height: auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    float: left;
+    background: whitesmoke;
+}
+
+@media (max-width: 599px) {
+    .viewQuestion_container {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0.5rem 1rem;
+        float: left;
+        background: whitesmoke;
+    }
+}

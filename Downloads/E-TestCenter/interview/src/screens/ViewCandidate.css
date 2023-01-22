@@ -1,0 +1,41 @@
+.viewcandidate {
+  padding: 2rem;
+}
+
+.candidate_container {
+  width: 85%;
+  height: 100vh;
+  display: block;
+  padding: 0.5rem 1rem;
+  float: left;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+.gridBox {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.eachGridBox {
+  display: grid;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.candidateBtn {
+  background: rgb(245, 197, 76);
+  color: black;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-left: 10px;
+}

@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.caption {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.white {
+  background: rgb(245, 197, 76);
+  color: black;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  background-color: rgb(248, 241, 241);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.drop-content Link {
+  color: black;
+  padding: 19px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+.drop:hover .btn-white {
+  background-color: gold;
+}
+
+.btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+
+.white {
+  background: white;
+}
+
+.gold {
+  background: #ffd500;
+}
+
+/* Custom Radio Btn */
+
+.inputGroup {
+  background-color: #fff;
+  display: block;
+  margin: 10px 0;
+  position: relative;
+}
+
+.inputGroup label {
+  padding: 12px 30px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: #3c454c;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+}
+
+.inputGroup label:before {
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  content: "";
+  background-color: #5759c6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: -1;
+}
+
+.inputGroup label:after {
+  width: 32px;
+  height: 32px;
+  content: "";
+  border: 2px solid #d1d7dc;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.inputGroup input:checked ~ label {
+  color: #fff;
+}
+
+.inputGroup input:checked ~ label:before {
+  transform: translate(-50%, -50%) scale3d(56, 56, 1);
+  opacity: 1;
+}
+
+.inputGroup input:checked ~ label:after {
+  background-color: white;
+  border-color: gray;
+}
+
+.inputGroup input {
+  width: 32px;
+  height: 32px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
+.dropdown {
+  background-color: #5759c6;
+  width: 100%;
+}
+
+/* phone-only */
+@media (max-width: 599px) {
+  /* .btn {
+        padding: 0.3rem 0.5rem;
+        border-radius: 16.5px;
+        border: none;
+        margin-right: 0.5rem;
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+        height: 35px;
+    } */
+  .inputGroup {
+    font-size: 10px;
+  }
+  .inputGroup input:checked ~ label:after {
+    background-color: white;
+    border-color: gray;
+  }
+}
+
+/* admin css*/
+.container {
+  width: 65%;
+  height: 100vh;
+  display: block;
+  padding: 2rem 1rem;
+  float: left;
+  border-radius: 20px;
+  background: whitesmoke;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 3%;
+  padding-top: 2rem;
+}
+
+.admin_container {
+  width: 85%;
+  height: 160vh;
+  display: block;
+  padding: 0.5rem 1rem;
+  float: left;
+  background: whitesmoke;
+}
+
+.admin {
+  padding: 1.4rem;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+.btn_view {
+  background: rgb(245, 197, 76);
+}
+
+.admin_form {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 4%;
+  grid-row-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.admin input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+}
+
+.form_left {
+  padding: 0.5rem 0.4rem;
+}
+
+.feed {
+  width: 95%;
+  height: 17rem;
+  display: block;
+  background-color: rgb(93, 83, 184);
+  border-radius: 30px;
+  padding: 2rem;
+  overflow: hidden;
+  color: white;
+}
+
+.feed_user {
+  width: 70%;
+  height: 15rem;
+  float: left;
+}
+
+.feed_img {
+  width: 25%;
+  height: 10rem;
+  float: left;
+}
+
+.feed_img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.feed_btn {
+  padding-top: 1rem;
+}
+
+.btn {
+  background: rgb(245, 197, 76);
+  color: black;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+
+.name {
+  margin: 10px;
+}
+
+.name input {
+  padding: 0.5em;
+  width: 30%;
+  height: 50%;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-color: lightgray;
+}
+
+.goBack_btn {
+  padding: 0.5rem;
+}
+
+.question_table {
+  padding: 2rem;
+}
+
+.goBack_btn {
+  padding: 0.5rem;
+}
+
+/* phone-only */
+
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 2rem 1rem;
+    float: left;
+    border-radius: 20px;
+    background: whitesmoke;
+  }
+
+  .cardGrid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3%;
+    padding-top: 2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 0.6rem;
+    border-radius: 16.5px;
+    border: none;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    height: 35px;
+  }
+}
+
+/* .tablet-portrait-up  */
+@media (min-width: 600px) {
+}
+/* tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+  .btn {
+    padding: 0.6rem 2rem;
+    border-radius: 16.5px;
+    border: none;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    height: 35px;
+  }
+}
+/* tablet-landscape-up */
+@media (min-width: 900px) {
+}
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* .desktop-up */
+@media (min-width: 1300px) {
+}
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+}

@@ -1,0 +1,110 @@
+.test_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.test_inputs {
+  width: 50%;
+  height: 65px;
+  padding: 10px;
+  margin-right: 15%;
+  border-radius: 20px;
+  border-color: lightgray;
+  border: 1px solid lightgray;
+}
+
+.test_checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test_btn {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  margin-left: 18%;
+  margin-top: 30px;
+}
+
+.test_checkbox label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.test_image {
+  width: 40%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23%;
+}
+
+.test_image img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50px;
+}
+
+.btn5 {
+  background: rgb(245, 197, 76);
+  color: black;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 20%;
+  border: none;
+  border-radius: 40px;
+  margin-left: 10%;
+}
+
+.btn2 {
+  background: rgb(245, 197, 76);
+  color: black;
+  padding: 1rem 2.4rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 20%;
+  border: none;
+  border-radius: 40px;
+  margin-left: 23%;
+}
+
+@media (max-width: 599px) {
+  .test_inputs {
+    width: 70%;
+    height: 70px;
+    padding: 10px;
+    margin-right: 5%;
+    border-radius: 20px;
+    border-color: lightgray;
+    border: 1px solid lightgray;
+  }
+  .test_btn {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+  }
+
+  .test_image {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+  .admin_container {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    padding: 0.5rem 1rem;
+    float: left;
+    background: whitesmoke;
+    border-radius: 20px;
+  }
+}
