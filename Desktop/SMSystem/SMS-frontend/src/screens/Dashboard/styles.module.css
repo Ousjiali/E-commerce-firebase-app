@@ -1,0 +1,253 @@
+.dashboardConatiner {
+  background-color: #f8f8fd;
+  display: flex;
+}
+.dashboard {
+  width: 87%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.dashboardBox {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-column-gap: 2%;
+  grid-row-gap: 15px;
+  padding: 3rem;
+}
+
+.dashboardCard {
+  width: 80%;
+  height: 95px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardCard:hover {
+  transition: transform 300ms;
+  transform: scale(1.2);
+  transition: ease-in-out 0.9s;
+}
+
+.dashboardCount {
+  display: flex;
+  margin-top: 5px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.dashboardCount h5 {
+  font-size: 14px;
+  color: black;
+}
+
+.dashboardCount p {
+  font-size: 45px;
+  /* background-color: lightgray; */
+  padding: 10px;
+  margin-left: 5px;
+  /* margin-right: 65px; */
+  color: #65e791;
+}
+
+.dashboardCount h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin: 5px 5px;
+}
+
+.dashboardCount h3 {
+  font-size: 50px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.dashboardCount2 {
+  display: flex;
+  margin-top: 5px;
+}
+.dashboardCount2 h5 {
+  font-size: 14px;
+  color: black;
+  margin-left: 2px;
+}
+.dashboardCount2 p {
+  font-size: 45px;
+  padding: 10px;
+  margin-left: 10px;
+  /* margin-right: 50px; */
+  color: #55acee;
+}
+
+.dashboardCount2 h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin: 5px 5px;
+}
+.dashboardCount2 h3 {
+  font-size: 50px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.dashboardCount3 {
+  display: flex;
+  margin-top: 5px;
+}
+.dashboardCount3 h5 {
+  font-size: 14px;
+  color: black;
+  margin-left: 2px;
+}
+.dashboardCount3 p {
+  font-size: 45px;
+  padding: 10px;
+  margin-left: 5px;
+  /* margin-right: 65px; */
+  color: #b44db6;
+}
+
+.dashboardCount3 h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin: 5px 5px;
+}
+
+.dashboardCount3 h3 {
+  font-size: 50px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.dashboardCount4 {
+  display: flex;
+  margin-top: 5px;
+}
+.dashboardCount4 h5 {
+  font-size: 14px;
+  color: black;
+  margin-left: 2px;
+}
+.dashboardCount4 p {
+  font-size: 45px;
+  padding: 10px;
+  margin-left: 5px;
+  color: #ff7870;
+}
+
+.dashboardCount4 h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin: 5px 5px;
+}
+
+.dashboardCount4 h3 {
+  font-size: 50px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.dashboardCount5 {
+  display: flex;
+  margin-top: 5px;
+}
+.dashboardCount5 h5 {
+  font-size: 14px;
+  color: black;
+  margin-left: 2px;
+}
+.dashboardCount5 p {
+  font-size: 45px;
+  padding: 10px;
+  margin-left: 5px;
+  color: #7f6fdf;
+}
+
+.dashboardCount5 h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin: 5px 5px;
+}
+.dashboardCount5 h3 {
+  font-size: 50px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+.dashboardContent {
+  display: flex;
+  padding: 3rem;
+  width: 100%;
+  gap: 3%;
+}
+
+.dashboardCalendar {
+  background-color: white;
+  width: 60%;
+  height: 650px;
+  border-radius: 10px;
+}
+
+.calendarTitle {
+  padding: 1rem;
+}
+
+.calendarTitle span {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.reactCalendar button {
+  font-size: 20px;
+  border-radius: 5px;
+  height: 80px;
+}
+
+.dashboardNotice {
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 650px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.noticeTitle {
+  padding: 20px;
+}
+
+.noticeTitle span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.noticeContent {
+  padding: 20px;
+  margin: 25px 15px 25px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.noticeContent h2 {
+  font-size: 14px;
+  color: #999999;
+  font-weight: bold;
+}
+
+.noticeContent h4 {
+  font-size: 18px;
+  color: #ff7870;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.noticeComment {
+  padding: 5px;
+
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+}

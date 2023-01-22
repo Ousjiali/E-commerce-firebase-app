@@ -1,0 +1,105 @@
+.loginPageContainer {
+  background-image: url(../../../assets/backgroundImage1.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginPageContent {
+  min-height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginTitle {
+  color: whitesmoke;
+  margin-right: 20%;
+  margin-bottom: 160px;
+}
+
+.loginTitle h2 {
+  font-size: 80px;
+}
+
+.loginTitle p {
+  font-size: 20px;
+}
+
+.adminTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15%;
+}
+
+.newForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.newForm label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.loginContent {
+  background-color: white;
+  height: 550px;
+  width: 150%;
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+.loginContent input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-bottom: lightgray solid 3px;
+  background-color: white;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.forgotpassword_btn {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.forgotpassword_btn h5:hover {
+  background-color: lightgray;
+  padding: 0px 1rem;
+  border-radius: 30px;
+  transition: transform 0.7s;
+  transform: scale(1.2);
+}
+
+.forgotpassword {
+  margin-top: 10px;
+}
+
+.stBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #341a25;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  transition: transform 0.7s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.stBtn:hover {
+  transform: scale(1.2);
+}
+
+.stBtn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

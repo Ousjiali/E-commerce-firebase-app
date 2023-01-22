@@ -1,0 +1,482 @@
+.profileContainer {
+  background-color: #f8f8fd;
+  display: flex;
+}
+
+.profile {
+  width: 87%;
+}
+
+.profileBox {
+  background-color: white;
+  height: 550px;
+  margin: 2%;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.profileBox2 {
+  height: 550px;
+  margin: 1%;
+  border-radius: 15px;
+  width: 30%;
+  margin-top: 50px;
+}
+
+.statsBox {
+  width: 50%;
+}
+
+.statsRating {
+  width: 60px;
+  height: 70px;
+}
+
+.profileEachBox h5 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.profileEachBox h6 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.profileEachBox h1 {
+  font-size: 45px;
+  color: lightgray;
+}
+
+.profileHeader {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -4%;
+}
+
+/* .profileGridCard {
+    padding: 1rem;
+  } */
+
+.profileEachCard {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+  row-gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.profileContentCard h2 {
+  font-size: 10px;
+}
+
+.profileContentCard h2 {
+  font-size: 10px;
+}
+
+.profileContentCard {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.profileContentCard h3 {
+  font-size: 40px;
+}
+.profileContentCard h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.profileEachCard svg {
+  font-size: 45px;
+}
+
+.profileCardIcon svg {
+  font-size: 15px;
+}
+
+.profileIcon1 {
+  color: #48d4f6;
+}
+
+.profileIcon2 {
+  color: #ffa871;
+}
+
+.profileBox span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pageTitle {
+  padding: 1.5rem;
+}
+
+.profileBox2 span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pageTitle2 {
+  padding: 1rem;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.staffDetail {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  margin-left: 6%;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.staffDetail svg {
+  font-size: 60px;
+  color: #55acee;
+}
+
+.staffDetail h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: 100;
+}
+
+.staffIcon {
+  margin-top: 5px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.staffDetail h2 {
+  font-size: 15px;
+}
+
+.staffDetail h4 {
+  font-size: 55px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.titleProfile {
+  margin-left: 40px;
+}
+
+.titleProfile p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profileContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancelButton {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef3838;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  color: #f8f8fd;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.cancelButton svg {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.subButton {
+  background-color: #ffa871;
+  padding: 1rem 2.5rem;
+  margin-left: 20px;
+  border-radius: 30px;
+  color: #f8f8fd;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.profileContainer {
+  background-color: #f8f8fd;
+  display: flex;
+}
+
+.profile {
+  width: 87%;
+}
+
+.viewTable {
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.profileBox {
+  background-color: white;
+  height: 550px;
+  margin: 3.5%;
+  border-radius: 15px;
+  width: 75%;
+  overflow-y: scroll;
+}
+
+.profileBox2 {
+  height: 550px;
+  margin: 2%;
+  border-radius: 15px;
+  width: 25%;
+  margin-top: 50px;
+}
+
+.statsBox {
+  width: 40%;
+}
+
+.statsRating {
+  width: 60px;
+  height: 70px;
+}
+
+.profileEachBox h5 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.profileEachBox h6 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.profileEachBox h1 {
+  font-size: 45px;
+  color: lightgray;
+}
+
+.profileHeader {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -4%;
+}
+
+.profileGridCard {
+  padding: 1rem;
+}
+
+.profileEachCard {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+  row-gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.profileContentCard h2 {
+  font-size: 12px;
+}
+
+.profileContentCard h2 {
+  font-size: 12px;
+}
+
+.profileContentCard {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.profileContentCard h3 {
+  font-size: 40px;
+}
+.profileContentCard h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.profileEachCard svg {
+  font-size: 45px;
+}
+
+.profileCardIcon svg {
+  font-size: 15px;
+}
+
+.profileIcon1 {
+  color: #48d4f6;
+}
+
+.profileIcon2 {
+  color: #ffa871;
+}
+
+.profileBox span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pageTitle {
+  padding: 1.5rem;
+}
+
+.profileBox2 span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pageTitle2 {
+  padding: 1rem;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.profileGridBox {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 2%;
+  row-gap: 15px;
+  /* background-color: whitesmoke; */
+  height: 100px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.profileEachBox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.staffDetails {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  margin-left: 6%;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.staffDetails svg {
+  font-size: 50px;
+  color: #65e791;
+}
+
+.staffDetails h1 {
+  font-size: 45px;
+  color: lightgray;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: 100;
+}
+
+.staffIcon {
+  margin-top: 5px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.staffDetails h2 {
+  font-size: 13px;
+}
+
+.staffDetails h4 {
+  font-size: 55px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.titleProfile {
+  margin-left: 40px;
+}
+
+.titleProfile p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profileContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancelButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef3838;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  color: #f8f8fd;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.cancelButton svg {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.chakar_btn1 svg {
+  font-size: 25px;
+  color: #2d9cdb;
+}
+
+.chakar_btn2 svg {
+  font-size: 25px;
+  color: #ef3838;
+}
+
+.chakar_btn2 {
+  margin-left: 20px;
+}
