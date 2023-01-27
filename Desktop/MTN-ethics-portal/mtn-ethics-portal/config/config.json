@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ethics-portal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ethicsPortal/EthicsPortalWebPart.js",
+          "manifest": "./src/webparts/ethicsPortal/EthicsPortalWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EthicsPortalWebPartStrings": "lib/webparts/ethicsPortal/loc/{locale}.js"
+  }
+}

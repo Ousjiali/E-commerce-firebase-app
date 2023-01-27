@@ -1,0 +1,18 @@
+.action-btn {
+  display: flex;
+  width: 150px;
+  cursor: pointer;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.correct-answer {
+  border: 2px solid #066106;
+  background: #7bff7b;
+  color: #000;
+  padding-left: 5px;
+}

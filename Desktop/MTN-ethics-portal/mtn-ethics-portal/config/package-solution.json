@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ethics-portal-client-side-solution",
+    "id": "5517b572-e821-4ad8-9480-2b736a18e1b4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ethics-portal description"
+      },
+      "longDescription": {
+        "default": "ethics-portal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ethics-portal Feature",
+        "description": "The feature that activates elements of the ethics-portal solution.",
+        "id": "89973962-c05f-48b7-9a5f-76eac5be60bc",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ethics-portal.sppkg"
+  }
+}

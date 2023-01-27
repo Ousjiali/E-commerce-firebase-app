@@ -1,0 +1,46 @@
+.titleH3 {
+  display: flex;
+  justify-items: center;
+  align-self: center;
+}
+.mtn__coverImage {
+  display: none;
+  height: 70%;
+  width: 100%;
+  padding: 15px;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.mtn__coverOval {
+  position: absolute;
+  display: none;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  border-radius: 0 0 50% 50%;
+  background: inherit;
+}
+
+.mtn__coverImage span {
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.mtn__CoverImageSpan h5 {
+  margin-left: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.mtn__CoverImageSpan {
+  margin-top: 45px;
+  width: 100%;
+  gap: 3px;
+}

@@ -1,0 +1,9 @@
+.verifying__state__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 4px;
+  height: 60%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}

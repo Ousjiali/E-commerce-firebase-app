@@ -1,0 +1,14 @@
+.mtn__topic {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1rem;
+  height: auto;
+}
+
+.mtn__blogBody {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  box-sizing: border-box;
+}

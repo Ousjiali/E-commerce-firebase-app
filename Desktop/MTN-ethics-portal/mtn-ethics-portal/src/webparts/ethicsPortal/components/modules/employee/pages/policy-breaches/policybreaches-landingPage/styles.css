@@ -1,0 +1,19 @@
+.policyBody {
+  width: 100%;
+  padding: 1rem;
+  /* background-color: brown; */
+  height: 550px;
+  font-size: 13px;
+}
+
+.policyBreaches {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-right: 10px;
+}
+
+.policyBreaches span {
+  font-weight: bold;
+}
