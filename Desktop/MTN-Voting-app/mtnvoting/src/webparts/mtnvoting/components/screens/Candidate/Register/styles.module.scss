@@ -1,0 +1,45 @@
+.space {
+  width: 50%;
+  display: flex;
+}
+.inputContainer {
+  display: grid;
+  width: 100%;
+}
+.imageContainer {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+.form_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.checkBox {
+  margin: 2%;
+  font-size: 16px;
+}
+
+.agenda {
+  padding: 0.4rem 1rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  flex-direction: column;
+}
+
+.agenda ul {
+  margin: 3px 7px;
+  padding: 10px;
+  font-weight: bold;
+}

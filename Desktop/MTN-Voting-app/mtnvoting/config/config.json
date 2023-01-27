@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mtnvoting-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mtnvoting/MtnvotingWebPart.js",
+          "manifest": "./src/webparts/mtnvoting/MtnvotingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MtnvotingWebPartStrings": "lib/webparts/mtnvoting/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

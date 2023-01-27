@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "mtnvoting-client-side-solution",
+    "id": "d3d44baf-a4b0-4d7c-9ed0-68bb8d363ca1",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.13.1"
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/mtnvoting.sppkg"
+  }
+}

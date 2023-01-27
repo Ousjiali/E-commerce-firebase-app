@@ -1,0 +1,98 @@
+.LandingPageContainer {
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.bgContainer {
+  display: flex;
+  background-image: url(../../assets/vote2.png);
+  height: 900px;
+  width: 1105px;
+}
+
+.pageContainer {
+  display: grid;
+  // background-color: aqua;
+}
+
+.pageContent1 {
+  position: relative;
+  left: 10%;
+  top: 30%;
+  padding: 10px;
+  width: 100%;
+}
+
+.pageContent1 img {
+  height: 70px;
+  margin-top: 10px;
+}
+
+.pgInCard a {
+  text-decoration: none;
+  color: black;
+}
+
+.pageContent1 h1 {
+  font-size: 30px;
+  color: aliceblue;
+  position: relative;
+  top: 3%;
+}
+
+.pageContent1 p {
+  font-size: 150px;
+  color: aliceblue;
+}
+
+.pageContent1 span {
+  background-color: #ffc423;
+  font-weight: bold;
+  font-size: 100px;
+  position: relative;
+  bottom: 2%;
+}
+
+.pageContainer2 {
+  display: grid;
+  background-color: white;
+  height: 650px;
+  width: 250px;
+  position: relative;
+  left: 43%;
+  top: 17%;
+  padding: 20px;
+}
+
+.pageCard {
+  padding: 20px;
+  background-color: white;
+  font-size: 50px;
+  width: 70%;
+  height: 130px;
+  border-radius: 10px;
+  margin-left: 35px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 7px rgba(118, 117, 117, 0.25);
+}
+
+.pgInCard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.pgInCard .register{
+  margin-left: 15px;
+}
+
+.pageCard:hover {
+  background-color: #ffc423;
+}
+
+.pgInCard p {
+  font-size: 12px;
+  position: relative;
+  top: 50%;
+}

@@ -1,0 +1,170 @@
+.votingPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: rgba(196, 196, 196, 0.19);
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+
+.nomineeContainerScreen {
+  // display: grid;
+  // grid-template-columns: 300px 300px 300px 300px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 80px;
+  margin: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.arrowRight {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto auto;
+  align-items: center;
+  justify-content: center;
+}
+.modalContent span {
+  // font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+}
+.modalContentButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  margin: auto auto;
+  gap: 20px;
+}
+.modalContentButton button {
+  width: 150px;
+  height: 31px;
+  background: #c4c4c4;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel button {
+  background: #c4c4c4;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+}
+.carousel ul li {
+  background: #c4c4c4;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+}
+.carousel ul li:active {
+  background: #c4c4c4;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+}
+.carousel button:active {
+  background: #c4c4c4;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+}
+.carousel button:hover {
+  background: #ffc423 !important;
+}
+.carousel button:focus {
+  background: #ffc423 !important;
+}
+.carousel button:disabled {
+  background: #c4c4c4;
+}
+.carousel button:checked {
+  background: #c4c4c4;
+  border: none !important;
+  outline: none !important;
+}
+.carousel button:disabled:hover {
+  background: #c4c4c4 !important;
+}
+
+.backButtonContainer {
+  // margin-left: auto;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  // justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+.backButton {
+  // margin-left: auto;
+  width: 150px;
+  height: 50px;
+  background: #ffc423;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  border: none;
+}
+
+.votingPrompt {
+  height: 50px;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px;
+  color: #fff;
+  background: red;
+}
