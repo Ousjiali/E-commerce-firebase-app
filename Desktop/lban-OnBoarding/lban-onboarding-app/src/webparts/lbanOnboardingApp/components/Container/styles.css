@@ -1,0 +1,14 @@
+.active {
+  border-bottom: 3px solid rgb(181, 3, 230);
+}
+
+.menu__item {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 1px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}

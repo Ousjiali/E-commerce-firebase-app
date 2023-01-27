@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "packageName": "OnBoarding-app",
+  "id": "0af1395d-8891-4d4f-ab6b-94d539660340",
+  "version": "1.0",
+  "developer": {
+    "name": "",
+    "websiteUrl": "https://lotusbetaanalytics.com/",
+    "privacyUrl": "https://lotusbetaanalytics.com/privacy",
+    "termsOfUseUrl": "https://lotusbetaanalytics.com/privacy",
+    "mpnId": "3617333"
+  },
+  "name": {
+    "short": "OnBoarding"
+  },
+  "description": {
+    "short": "LBAN OnBoarding Portal to integrate New and Exisiting Staffs.",
+    "full": "LBAN OnBoarding Portal to integrate New and Exisiting Staffs into the company, with appropriate permissions and training to help with a full staffs development."
+  },
+  "icons": {
+    "outline": "{{SPFX_COMPONENT_ID}}_outline.png",
+    "color": "{{SPFX_COMPONENT_ID}}_color.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26componentId={{SPFX_COMPONENT_ID}}",
+      "canUpdateConfiguration": false,
+      "scopes": ["team", "groupchat"],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingSidePanel",
+        "meetingDetailsTab",
+        "meetingChatTab"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "resourceseng.blob.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

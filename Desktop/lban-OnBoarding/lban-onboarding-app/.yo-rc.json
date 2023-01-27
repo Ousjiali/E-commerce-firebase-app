@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "onboarding-app",
+    "libraryId": "d46c9f9b-734b-4b9b-a4be-f9af99598000",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "onboarding-app",
+    "solutionShortDescription": "onboarding-app description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

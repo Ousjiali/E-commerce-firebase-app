@@ -1,0 +1,48 @@
+
+.menubar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5%;
+   
+  }
+  
+  .menubar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+  
+  .menubar ul li {
+    display: flex;
+    margin: 0.5rem ;
+    margin-right: 4rem;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 5px solid rgba(217, 217, 217, 1); 
+   
+  }
+
+  .menubar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+ 
+  .remote {
+    border-bottom: 5px solid rgba(155, 28, 141, 1);
+  }
+
+  .approveIcon{
+    font-weight: 800;
+    margin-right: 5px;
+  }

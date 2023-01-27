@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "onboarding-app-client-side-solution",
+    "id": "d46c9f9b-734b-4b9b-a4be-f9af99598000",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "onboarding-app description"
+      },
+      "longDescription": {
+        "default": "onboarding-app description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "onboarding-app Feature",
+        "description": "The feature that activates elements of the onboarding-app solution.",
+        "id": "ceafa25d-221d-45fe-8a51-f2e5b884ac6c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/onboarding-app.sppkg"
+  }
+}

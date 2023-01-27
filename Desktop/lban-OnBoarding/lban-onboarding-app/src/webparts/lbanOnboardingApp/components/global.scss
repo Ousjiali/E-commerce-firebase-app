@@ -1,0 +1,437 @@
+.onBoarding__InputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  padding-left: 1;
+  padding-right: 3rem;
+
+  label {
+    font-size: 13px;
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+  }
+
+  input {
+    width: 100%;
+    height: 2rem;
+    outline: none;
+
+    padding: 0.5rem 1.5rem;
+
+    border: 1px solid rgba(120, 120, 120, 1);
+  }
+
+  input:read-only {
+    background: whitesmoke;
+  }
+  input:disabled {
+    border: none;
+  }
+  input:focus {
+    border: 1px solid rgba(155, 28, 141, 1);
+    outline: 1px solid rgba(155, 28, 141, 1);
+  }
+  select {
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+
+    border: 1px solid rgba(120, 120, 120, 1);
+    padding: 0.5rem 1.5rem;
+
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+  select:focus {
+    border: 1px solid rgba(155, 28, 141, 1);
+    outline: 1px solid rgba(155, 28, 141, 1);
+  }
+
+  select:disabled {
+    background: whitesmoke;
+    border: none;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+select {
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+
+  border: 1px solid rgba(120, 120, 120, 1);
+  padding: 0.5rem 1.5rem;
+
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+select:focus {
+  border: 1px solid rgba(155, 28, 141, 1);
+  outline: 1px solid rgba(155, 28, 141, 1);
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+select {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+
+  border: 1px solid rgba(120, 120, 120, 1);
+  padding: 0.5rem 1.5rem;
+
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+select:focus {
+  border: 1px solid rgba(155, 28, 141, 1);
+  outline: 1px solid rgba(155, 28, 141, 1);
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.uploadWrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.uploadWrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.uploadBtn_ {
+  border: none;
+  color: black;
+  background-color: rgb(248, 248, 248);
+  // padding: .4rem .5rem;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.loading {
+  height: 10px;
+  width: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
+}
+
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled {
+  background: whitesmoke;
+  color: black;
+  cursor: not-allowed;
+}
+
+.remote {
+  border-bottom: 5px solid rgba(155, 28, 141, 1) !important;
+}
+
+input:checked {
+  background: 1px solid rgba(155, 28, 141, 1);
+  border: 3px solid rgba(155, 28, 141, 1);
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textArea__container {
+  width: 90%;
+  height: 5rem;
+  padding: 0.5rem 0;
+  padding-left: 1;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+textarea {
+  resize: none;
+  height: 100%;
+  padding: 16px;
+  width: 100%;
+  border: 1px solid rgba(120, 120, 120, 1);
+  outline: none;
+}
+textarea:focus {
+  border: 1px solid rgba(155, 28, 141, 1);
+  outline: 1px solid rgba(155, 28, 141, 1);
+}
+
+textarea:disabled {
+  background: whitesmoke;
+  border: none;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 0.3rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.btns {
+  height: 3rem;
+  outline: none;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.smallBtn {
+  padding: 0.4rem 1rem;
+  height: 2rem;
+  color: rgba(155, 28, 141, 1);
+  background-color: #fff;
+  border: 1px solid rgba(155, 28, 141, 1);
+}
+
+.btns:hover {
+  transform: scale(0.9);
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 0;
+  align-items: center;
+  margin: 1% 2%;
+}
+
+.purple {
+  background-color: rgba(155, 28, 141, 1);
+  color: #fff;
+}
+.white {
+  color: rgba(155, 28, 141, 1);
+  background-color: #fff;
+  border: 1px solid rgba(155, 28, 141, 1);
+}
+
+// size
+
+.midi {
+  display: grid;
+  width: 90%;
+}
+.maxi {
+  flex-basis: 100%;
+}
+.mini {
+  flex-basis: 25%;
+}
+
+// End of sizes
+
+// profile screen
+.Displayflex {
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.Displayflex h3 {
+  margin-bottom: 3px;
+  margin-top: 2%;
+}
+
+.flex {
+  display: flex;
+  padding: 2%;
+}
+
+// end screen
+.homePage {
+  width: 93.5%;
+  height: 100vh;
+  background: linear-gradient(
+      0.5deg,
+      rgba(0, 0, 0, 0.6) 20.24%,
+      rgba(154, 25, 140, 0) 103.92%
+    ),
+    url("https://lotusbetaanalytics.sharepoint.com/sites/lban-Onboarding-Portal/assets/onBoardingPic.png"),
+    no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  display: flex;
+  padding-bottom: 0;
+}
+
+.homeContainer {
+  width: 100%;
+  // display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 170px;
+}
+
+.homeContainer img {
+  width: 80px;
+  height: 80px;
+}
+
+.homeText {
+  font-size: 50px;
+  padding: 8px;
+}
+
+.homeText h5 {
+  margin-top: -70px;
+  font-size: 50px;
+}
+
+.homeText b {
+  color: purple;
+}
+
+.homeButton {
+  // margin-top: -80px;
+  padding: 1.5rem 5rem;
+  background-color: purple;
+  border: none;
+  border-radius: 26px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.homeButton:hover {
+  transform: scale(0.9);
+}
+
+.homeBtn {
+  padding: 1rem;
+  margin-top: -60px;
+}
+
+//HOD btn
+.lban__btn__table {
+  background: purple;
+  color: #fff;
+  padding: 0.5rem;
+  margin-left: 1%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+//View PendingRequestHOD
+.gridbox__allContent {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 48% 48%;
+  grid-gap: 5px;
+  padding: 5px;
+  flex-direction: column;
+}
+
+.grid__titleContent p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.eachGridbox__allContent {
+  display: grid;
+  padding: 1rem;
+}
+
+.eachGridbox__allContent header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.assign__btn {
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.assign__btn2 {
+  padding: 1rem 3rem;
+  border-bottom: 4px solid purple;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.assign__btn2:hover {
+  background-color: lightgray;
+}
