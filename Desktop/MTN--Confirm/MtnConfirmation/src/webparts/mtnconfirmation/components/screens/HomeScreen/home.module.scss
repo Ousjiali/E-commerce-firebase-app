@@ -1,0 +1,33 @@
+.app{
+    width: 100%;
+    height: 100vh;
+     background: url('../../assets/bg.png');
+     background-size: cover;
+    padding: 10rem;
+   display: flex;
+   padding-bottom: 0;
+}
+
+.mtn__banner{
+    width: 100%;
+    display: flex;
+    padding: 3rem 2rem;
+    background: rgba(255, 196, 35, 1);
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+.mtn__logoContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{display: flex;margin-right: 1rem;}
+.logo img{width:100px;height:100px;object-fit: contain;}
+.text{display: flex;flex-direction: column}
+.text h3{font-size: 2rem;}
+.text h1{font-size: 3rem;}
+.btnContainer{
+    display: flex;
+    align-self: center;justify-content: center;align-items: center;
+}

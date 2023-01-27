@@ -1,0 +1,83 @@
+.mtn__navigation{
+    display: flex;
+    height: 100vh;
+    flex: 0.17;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 2rem 0;
+background: #FFC423;}
+
+.mtn__logo{
+    display: flex;
+    padding: .3rem;
+    height: 5rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    img{
+        object-fit: contain;
+        max-height: 4rem;
+    }
+}
+
+.mtn__url{
+    display: flex;
+    padding: 2rem 1.5rem;
+    padding-top: 5rem;
+    flex-direction: column;
+ ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+}
+ ul li {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    height: 3rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+   
+}
+ul li:hover{
+    background: #006993;
+    color: white;
+    border-radius: 10px;
+}
+ ul li a {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+ ul li span {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+ ul li a svg {
+    margin-right: .5rem;
+    margin-top: .1rem;
+}
+ ul li span svg {
+    margin-right: .5rem;
+    margin-top: .1rem;
+}
+.active{
+    background: #006993;
+    color: white;
+    border-radius: 10px;
+    a{
+        color: white;
+    }
+    svg{
+        color: white;
+    }
+}
+
+}

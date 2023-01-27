@@ -1,0 +1,57 @@
+.view__Container {
+  padding: 2rem;
+}
+
+table,
+thead,
+tr {
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+thead {
+  width: 60%;
+  height: 70px;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
+
+tr {
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+.mtn__blackBtn {
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  color: aliceblue;
+  background-color: black;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0px 2px 2px 0px rgb(134, 109, 109);
+  cursor: pointer;
+}
+
+.mtn__black {
+  background: #000;
+}

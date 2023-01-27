@@ -1,0 +1,77 @@
+
+.yello__container {
+  width: 75%;
+  height: 550px;
+  border-radius: 50%;
+  background-color: rgba(255, 196, 35, 1);
+  margin-left: -40%;
+}
+
+.mtn__yello {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+.yello__Con span {
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.yello__Con {
+  display: flex;
+  width: 50%;
+  margin-left: 10rem;
+  padding-top: 10rem;
+  flex-direction: column;
+  // background-color: red;
+}
+
+.yello__side {
+  padding: 1rem;
+}
+
+.mtn__btnCon {
+  width: 60%;
+}
+
+.mtn__btn {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px 0px rgb(134, 109, 109);
+}
+
+.mtn__black {
+  background: #000;
+}
+
+.yello__Con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mtn__yellologo {
+  float: right;
+  padding: 3rem;
+}
+
+.mtn__yellologo img {
+  width: 100%;
+  height: 100px;
+}
