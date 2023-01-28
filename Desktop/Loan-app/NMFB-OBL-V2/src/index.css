@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("./shared/home.css");
+@import url("./shared/button.css");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+.appContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.contentsRight {
+  flex-grow: 1;
+  padding: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 0.87;
+  padding: 0.5rem 2rem;
+  height: 100vh;
+  background: white;
+  /* justify-content: space-between; */
+}
+
+.pageContents {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Media Query */
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1300px) {
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .contentsRight {
+    flex: 1;
+  }
+}

@@ -1,0 +1,17 @@
+export const queryKeys = {
+  user: "user",
+  pending: "pending",
+  approved: "approved",
+  declined: "declined",
+  summary: "summary",
+  branch: "branch",
+  bank: "bank",
+  roles: "roles",
+  group: "group",
+  audit: "audit",
+  admin: "admin",
+  loanType: "loanType",
+  checklist: "checklist",
+  document: "document",
+  allLoan: "allLoan",
+};

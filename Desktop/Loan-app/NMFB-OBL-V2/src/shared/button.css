@@ -1,0 +1,160 @@
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.padding10 {
+  padding: 1rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  height: 3rem;
+  outline: none;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.btnMD {
+  height: 2.5rem;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.btnSM {
+  height: 2rem;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.success {
+  background: #5cb85c;
+  color: white;
+}
+.green {
+  background: rgba(8, 126, 140, 1);
+  color: white;
+}
+.btnRed {
+  background: crimson;
+  color: white;
+}
+
+.btnWhite {
+  background: white;
+  color: black;
+}
+
+.marginRight {
+  margin-right: 1rem;
+}
+
+.btnRadius {
+  border-radius: 50px;
+}
+
+.btnGreen {
+  background: var(--green);
+  color: white;
+}
+
+.btnBlack {
+  background: var(--black);
+  color: white;
+}
+
+.btnGray {
+  background: rgba(200, 200, 200, 0.3);
+  color: #000000;
+}
+
+.btnAction {
+  background: #5cb85c;
+  color: white;
+}
+.btnDanger {
+  background: crimson;
+  color: #fff;
+}
+.btnPadding {
+  padding: 0.5rem 2rem;
+}
+
+.action {
+  margin-right: 1rem;
+}
+
+.action svg {
+  margin-right: 1rem;
+}
+
+.loading {
+  height: 30px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
+}
+
+@keyframes spinner3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled {
+  background: whitesmoke;
+  color: black;
+  cursor: not-allowed;
+}
+
+.colorWhite {
+  color: white;
+}
+.btnSMtable {
+  height: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-items: center;
+  margin-right: 10px;
+}

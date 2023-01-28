@@ -1,0 +1,157 @@
+.welcomeBanner {
+  background-color: rgba(8, 126, 140, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.welcomeBanner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.welcomeBanner small {
+  font-size: 1rem;
+}
+.dashboardItems {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
+}
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  padding: 1rem;
+}
+.cardFlex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.modalTitle {
+  display: flex;
+  padding: 0.5rem 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.inputFlex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.checklistContainer {
+  display: flex;
+  flex-direction: column;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+  .cardFlex {
+    flex-wrap: wrap;
+  }
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cardFlex {
+    flex-wrap: wrap;
+  }
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cardFlex {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .card-2 {
+    flex: 1;
+  }
+  .dashboardItems {
+    flex-direction: column;
+  }
+}

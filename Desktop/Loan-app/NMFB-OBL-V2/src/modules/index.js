@@ -1,0 +1,17 @@
+export { default as Home } from "./Home";
+export { default as Dashboard } from "./Dashboard";
+export { default as PendingLoan } from "./Loan/Pending";
+export { default as ApprovedLoan } from "./Loan/Approved";
+export { default as DeclinedLoan } from "./Loan/Declined";
+export { default as SinglePendingLoan } from "./Loan/Pending/Single";
+export { default as ViewLoan } from "./Loan/View";
+export { default as AllRequest } from "./AllRequest";
+export { default as Branch } from "./Branch";
+export { default as Bank } from "./Bank";
+export { default as Role } from "./Roles";
+export { default as Group } from "./Groups";
+export { default as LoanType } from "./Config/LoanType";
+export { default as Checklist } from "./Config/Checklist";
+export { default as Document } from "./Config/Document";
+export { default as Admin } from "./Admin";
+export { default as Audit } from "./Audit";
