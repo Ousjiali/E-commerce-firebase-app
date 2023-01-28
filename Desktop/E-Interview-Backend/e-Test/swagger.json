@@ -1,0 +1,2699 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "e-Test API",
+        "description": "Description",
+        "version": "1.0.0"
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "company profile",
+            "description": "create and modify company profiles"
+        },
+        {
+            "name": "admin",
+            "description": "Create and modify admin users"
+        },
+        {
+            "name": "candidate",
+            "description": "Create and modify candidates"
+        },
+        {
+            "name": "test",
+            "description": "Create and modify tests"
+        },
+        {
+            "name": "section",
+            "description": "Create and modify sections"
+        },
+        {
+            "name": "question",
+            "description": "Create and modify questions"
+        },
+        {
+            "name": "test score",
+            "description": "Create and modify test scores"
+        },
+        {
+            "name": "section score",
+            "description": "Create and modify section scores"
+        },
+        {
+            "name": "candidate response",
+            "description": "Candidates test response"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [],
+    "produces": [],
+    "paths": {
+        "/api/v1/company/": {
+            "get": {
+                "tags": ["company profile"],
+                "summary": "Get the company profile",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["company profile"],
+                "summary": "Create company profile",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/company/upload-logo": {
+            "post": {
+                "tags": ["company profile"],
+                "summary": "Upload the company's logo",
+                "description": "",
+                "consumes": ["multipart/form-data"],
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "body",
+                        "type": "file",
+                        "description": "",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/company/{id}": {
+            "get": {
+                "tags": ["company profile"],
+                "summary": "Get company profile by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    } 
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["company profile"],
+                "summary": "Update Company Profile by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["company profile"],
+                "summary": "Delete Company Profile by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/company/all": {
+            "get": {
+                "tags": ["company profile"],
+                "summary": "Get all company profiles",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/CompanyProfile"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test": {
+            "get": {
+                "tags": ["test"],
+                "summary": "Get all tests",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Test"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["test"],
+                "summary": "Create test",
+                "description": "",
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/Test"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/Test"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/test/assigned": {
+            "get": {
+                "tags": ["test"],
+                "summary":"Get assigned test for the authenticated candidate ",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Test"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test/{id}": {
+            "get": {
+                "tags": ["test"],
+                "summary":"Get test by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Test"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["test"],
+                "summary": "Update test by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Test"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["test"],
+                "summary": "Delete test by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test/{id}/sections": {
+            "get": {
+                "tags": ["test"],
+                "summary":"Get all sections in a test",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test/{id}/questions": {
+            "get": {
+                "tags": ["test"],
+                "summary":"Get all questions in a test",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestQuestions"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/question/": {
+            "get": {
+                "tags": ["question"],
+                "summary":"Get all questions",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["question"],
+                "summary": "Create question",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Question"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/question/assigned": {
+            "get": {
+                "tags": ["question"],
+                "summary":"Get all questions in an authenticated candidate's test",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/question/{id}": {
+            "get": {
+                "tags": ["question"],
+                "summary":"Get question by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["question"],
+                "summary":"Update question by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Question"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["question"],
+                "summary":"Delete question by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/question/section/{section_id}": {
+            "get": {
+                "tags": ["question"],
+                "summary":"Get all questions in a section using the section id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "section_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Question"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section/": {
+            "get": {
+                "tags": ["section"],
+                "summary": "Get all sections",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["section"],
+                "summary": "Create section",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Section"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/section/assigned": {
+            "get": {
+                "tags": ["section"],
+                "summary": "Get sections in a candidate's assigned test",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+          },
+        "/api/v1/section/{id}": {
+            "get": {
+                "tags": ["section"],
+                "summary": "Get section by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["section"],
+                "summary": "Update section by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Section"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["section"],
+                "summary": "Delete section by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section/test/{test_id}": {
+            "get": {
+                "tags": ["section"],
+                "summary": "Get all sections in a test using the test id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/Section"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get all test scores",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["test score"],
+                "summary": "Create test score",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/TestScore"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/self": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get all authenticated candidate's test scores",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/{id}": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get test score by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["test score"],
+                "summary": "Update test score by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/TestScore"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["test score"],
+                "summary": "Delete test score by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/candidate/{candidate_id}": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get all test scores for a candidate, using candidate id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "candidate_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/test/{test_id}": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get all test score for a test using test id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/test/{test_id}/candidate/{candidate_id}": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get test score for a candidate, in a test",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "candidate_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/test-score/self/test/{test_id}": {
+            "get": {
+                "tags": ["test score"],
+                "summary": "Get all authenticated candidate's test score for a specific test",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/TestScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get all section scores",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/response/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["section score"],
+                "summary": "Create section score",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/SectionScore"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/response/SectionScore"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/self": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get all authenticated candidate's section scores",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/{id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get section score by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/response/SectionScore"
+                        }
+                        
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["section score"],
+                "summary": "Update section score by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/SectionScore"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/response/SectionScore"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["section score"],
+                "summary": "Delete section score by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/candidate/{candidate_id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get all section scores for a candidate, using candidate id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "candidate_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/test/{test_id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get all section scores for a test using test id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/section/{section_id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get all section score for a section using section id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "section_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/section/{section_id}/candidate/{candidate_id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary": "Get section score for a candidate, in a section",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "section_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "candidate_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/section-score/self/section/{section_id}": {
+            "get": {
+                "tags": ["section score"],
+                "summary":"Get all authenticated candidate's section score for a specific section",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "section_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/SectionScore"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/admin/": {
+            "get": {
+                "tags": ["admin"],
+                "summary": "Get all admin users",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["admin"],
+                "summary": "Create admin user",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/admin/upload-profile": {
+            "post": {
+                "tags": ["admin"],
+                "summary": "Upload a profile picture for the authenticated admin user",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "formData",
+                        "name": "body",
+                        "type": "file",
+                        "description": "",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/v1/admin/{id}": {
+            "get": {
+                "tags": ["admin"],
+                "summary": "Get admin user by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["admin"],
+                "summary": "Update admin user by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["admin"],
+                "summary": "Delete admin user by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/admin/self": {
+            "get": {
+                "tags": ["admin"],
+                "summary": "Get currently authenticated admin user",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["admin"],
+                "summary": "Update currently authenticated admin user",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate": {
+            "get": {
+                "tags": ["candidate"],
+                "summary": "Get all candidates",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["candidate"],
+                "summary": "Create candidate",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate/passed": {
+          "get": {
+            "tags": ["candidate"],
+            "summary": "Get all candidates that passed their test",
+            "description": "",
+            "parameters": [],
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                    "$ref": "#/definitions/Candidate"
+                }
+              },
+              "404": {
+                "description": "Not Found"
+              }
+            }
+          }
+        },
+        "/api/v1/candidate/failed": {
+          "get": {
+            "tags": ["candidate"],
+            "summary": "Get all candidates that failed their test",
+            "description": "",
+            "parameters": [],
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                    "$ref": "#/definitions/Candidate"
+                }
+              },
+              "404": {
+                "description": "Not Found"
+              }
+            }
+          }
+        },
+        "/api/v1/candidate/{id}": {
+            "get": {
+                "tags": ["candidate"],
+                "summary": "Get candidate by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["candidate"],
+                "summary": "Update candidate by id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["candidate"],
+                "summary": "Update candidate by id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                    "description": "OK"
+                    },
+                    "404": {
+                    "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate/self": {
+            "get": {
+                "tags": ["candidate"],
+                "summary": "Get currently authenticated candidate",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["candidate"],
+                "summary": "Update currently authenticated candidate",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate-response": {
+            "get": {
+                "tags": ["candidate response"],
+                "summary": "Get a candidate's response",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "select",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "post": {
+                "tags": ["candidate response"],
+                "summary": "Create a candidate's response",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CandidateResponse"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate-response/{id}": {
+            "get": {
+                "tags": ["candidate response"],
+                "summary": "Get a candidate's response using id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            },
+            "put": {
+                "tags": ["candidate response"],
+                "summary": "Update a candidate's response using id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/CandidateResponse"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["candidate response"],
+                "summary": "Delete a candidate's response using id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate-response/question/{question_id}": {
+            "get": {
+                "tags": ["candidate response"],
+                "summary": "Get an authenticated candidate's response using the question id",
+                "description": "",
+                "parameters": [
+                    {
+                    "name": "question_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/candidate-response/candidate/{candidate_id}/test/{test_id}/question/{question_id}": {
+            "get": {
+                "tags": ["candidate response"],
+                "summary": "Get a candidate's response using the candidate id, test id and question id",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "candidate_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "test_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "question_id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/responses/CandidateResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/admin/": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Admin login",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "example": "any"
+                                },
+                                "password": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/Token"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/admin/logout": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Admin logout",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/admin/account": {
+            "get": {
+                "tags": ["authentication"],
+                "summary": "Get currently authenticated admin user",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Admin"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/admin/forgotPassword": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Forgot password for admin",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/admin/resetPassword/:resettoken": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Reset Password for admin",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "example": "any"
+                                },
+                                "password": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Candidate login",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "example": "any"
+                                },
+                                "password": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/responses/Token"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/logout": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Candidate logout",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/account": {
+            "get": {
+                "tags": ["authentication"],
+                "summary": "Get currently authenticated candidate",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Candidate"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/forgotPassword": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Forgot password for candidate",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "email": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/resetPassword/:resettoken": {
+            "post": {
+                "tags": ["authentication"],
+                "summary": "Reset Password for candidate",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "example": "any"
+                                },
+                                "password": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "CompanyProfile": {
+            "required": [
+                "title",
+                "description",
+                "logo"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "description": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "logo": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "colorScheme": {
+                    "type": "array",
+                    "example": ["Some", "example", "string"]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Admin": {
+            "required": [
+                "firstName",
+                "lastName",
+                "email",
+                "password"
+            ],
+            "properties": {
+                "firstName": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "lastName": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "phone": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Candidate": {
+            "required": [
+                "firstName",
+                "lastName",
+                "phone",
+                "email",
+                "password"
+            ],
+            "properties": {
+                "firstName": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "lastName": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "phone": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Test": {
+            "required": [
+                "title"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "timer": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Section": {
+            "required": [
+                "title",
+                "timer",
+                "instruction",
+                "test"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "timer": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "instruction": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "test": {
+                    "type": "string",
+                    "example": "Test id"
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Question": {
+            "required": [
+                "question",
+                "correct_answers",
+                "section"
+            ],
+            "properties": {
+                "question": {
+                    "type": "string",
+                    "example": "Some example string"
+                },  
+                "answers": {
+                    "type": "array",
+                    "example": ["Some", "example", "string"]
+                },
+                "correct_answers": {
+                    "type": "array",
+                    "example": ["Some", "example", "string"]
+                },
+                "section": {
+                    "type": "string",
+                    "example": "Section id"
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "TestScore": {
+            "required": [
+                "candidate",
+                "test",
+                "score"
+            ],
+            "properties": {
+                "candidate": {
+                    "type": "string",
+                    "example": "Candidate id"
+                },
+                "test": {
+                    "type": "string",
+                    "example": "Test id"
+                },
+                "score": {
+                    "type": "integer",
+                    "example": 10
+                }
+            }
+        },
+        "SectionScore": {
+            "required": [
+                "candidate",
+                "test",
+                "section",
+                "score"
+            ],
+            "properties": {
+                "candidate": {
+                    "type": "string",
+                    "example": "Candidate id"
+                },
+                "test": {
+                    "type": "string",
+                    "example": "Test id"
+                },
+                "section": {
+                    "type": "string",
+                    "example": "Section id"
+                },
+                "score": {
+                    "type": "integer",
+                    "example": 10
+                }
+            }
+        },
+        "CandidateResponse": {
+            "required": [
+                "question",
+                "selected_answers"
+            ],
+            "properties": {
+                "candidate": {
+                    "type": "string",
+                    "example": "Candidate id"
+                },
+                "test": {
+                    "type": "string",
+                    "example": "Test id"
+                },
+                "section": {
+                    "type": "string",
+                    "example": "Section id"
+                },
+                "question": {
+                    "type": "string",
+                    "example": "Question id"
+                },
+                "selected_answers": {
+                    "type": "array",
+                    "example": ["Some example string"]
+                }
+            }
+        },
+        "File": {
+            "required": ["file"],
+            "properties": {
+                "file": {
+                    "type": "string",
+                    "example": "Some example string"
+                }
+            }
+        }
+    },
+    "responses": {
+        "Section": {
+            "required": [
+                "title",
+                "timer",
+                "instruction",
+                "test"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "timer": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "instruction": {
+                    "type": "string",
+                    "example": "Some example string"
+                },
+                "test": {
+                    "$ref": "#/definitions/Test"                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "Question": {
+            "required": [
+                "question",
+                "correct_answers",
+                "section"
+            ],
+            "properties": {
+                "question": {
+                    "type": "string",
+                    "example": "Some example string"
+                },  
+                "answers": {
+                    "type": "array",
+                    "example": ["Some", "example", "string"]
+                },
+                "correct_answers": {
+                    "type": "array",
+                    "example": ["Some", "example", "string"]
+                },
+                "section": {
+                    "$ref": "#/definitions/Section"                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "Date.now"
+                }
+            }
+        },
+        "CandidateResponse": {
+            "required": [
+                "candidate",
+                "test",
+                "section",
+                "question",
+                "selected_answers"
+            ],
+            "properties": {
+                "candidate": {
+                    "$ref": "#/definitions/Candidate"
+                },
+                "test": {
+                    "$ref": "#/definitions/Test"
+                },
+                "section": {
+                    "$ref": "#/definitions/Section"
+                },
+                "question": {
+                    "$ref": "#/definitions/Question"
+                },
+                "selected_answers": {
+                    "type": "array",
+                    "example": ["Some example string"]
+                }
+            }
+        },
+        "TestScore": {
+            "required": [
+                "candidate",
+                "test",
+                "score"
+            ],
+            "properties": {
+                "candidate": {
+                    "$ref": "#/definitions/Candidate"                },
+                "test": {
+                    "$ref": "#/definitions/Test"                },
+                "score": {
+                    "type": "integer",
+                    "example": 10
+                }
+            }
+        },
+        "SectionScore": {
+            "required": [
+                "candidate",
+                "test",
+                "section",
+                "score"
+            ],
+            "properties": {
+                "candidate": {
+                    "$ref": "#/definitions/Candidate"                
+                },
+                "test": {
+                    "$ref": "#/definitions/Test"                
+                },
+                "section": {
+                    "$ref": "#/definitions/Section"                
+                },
+                "score": {
+                    "type": "integer",
+                    "example": 10
+                }
+            }
+        },
+        "Token": {
+            "properties": {
+                "token": {
+                    "type": "string",
+                    "example": "Some example string"
+                }
+            }
+        },
+        "TestQuestions": {
+            "required": ["file"],
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "example": [
+                        {
+                            "section": {
+                                "$ref": "#/definitions/Section"                
+                            },
+                            "question": {
+                                "$ref": "#/definitions/Question"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

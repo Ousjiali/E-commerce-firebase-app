@@ -1,0 +1,335 @@
+{
+	"success": true,
+	"count": 9,
+	"pagination": {},
+	"data": [
+		{
+			"_id": "628df31fcf4d68da627380be",
+			"title": "Technical Test ",
+			"timer": 3,
+			"videoUrl": "_IOZ8_cPgu8",
+			"isTraining": true,
+			"createdAt": "2022-05-25T09:13:03.470Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "628df35acf4d68da627380c7",
+					"title": "General IT Knowledge ",
+					"timer": 3,
+					"instruction": "Read Carefully",
+					"test": "628df31fcf4d68da627380be",
+					"createdAt": "2022-05-25T09:14:02.244Z",
+					"__v": 0,
+					"questions": [
+						{
+							"_id": "628df42ecf4d68da627380d5",
+							"question": "An IP address is best defined as...",
+							"answers": [
+								"Internet Provider Address. The address of a company that provides individuals and other companies access to the Internet.",
+								"An IP Address is a unique number consisting of 4 parts separated by dots (eg: 217.247.84.89) associated with every system connected to a network.",
+								"The location of Internet Packets measured in kilobytes on a network.",
+								"All of the Above"
+							],
+							"correct_answers": [
+								"An IP Address is a unique number consisting of 4 parts separated by dots (eg: 217.247.84.89) associated with every system connected to a network."
+							],
+							"section": "628df35acf4d68da627380c7",
+							"createdAt": "2022-05-25T09:17:34.191Z",
+							"__v": 0,
+							"id": "628df42ecf4d68da627380d5"
+						},
+						{
+							"_id": "628df88dcf4d68da627380e9",
+							"question": "Malware is best defined as...",
+							"answers": [
+								"A computer program designed to protect the operating system from viruses.",
+								"Microsoft Arithmetic LAN software. Software run in the background of any Windows based computer system used to manage network connections",
+								"Software designed to infiltrate or damage a computer system without the owner's informed consent.",
+								"None of the above."
+							],
+							"correct_answers": [
+								"Software designed to infiltrate or damage a computer system without the owner's informed consent."
+							],
+							"section": "628df35acf4d68da627380c7",
+							"createdAt": "2022-05-25T09:36:13.630Z",
+							"__v": 0,
+							"id": "628df88dcf4d68da627380e9"
+						},
+						{
+							"_id": "628df9f6cf4d68da62738103",
+							"question": "Which one of the following best defines the term Operating System?",
+							"answers": [
+								"The software that allows computer users to run applications with the hardware of a specific system. Microsoft® Windows® or Apple® Computer's OS are examples of operating systems.",
+								"The master control program that manages a computer's internal functions and provides a means of control to the computer's operations and file system.",
+								"The software that manages the hardware and software interface of a computer.",
+								"All of the above."
+							],
+							"correct_answers": ["All of the above."],
+							"section": "628df35acf4d68da627380c7",
+							"createdAt": "2022-05-25T09:42:14.830Z",
+							"__v": 0,
+							"id": "628df9f6cf4d68da62738103"
+						},
+						{
+							"_id": "628dfbe9cf4d68da62738129",
+							"question": "What is known as sandbox?",
+							"answers": [
+								"It is a program which can be molded to do desired task.",
+								"It is program that is controlled or emulated section of OS.",
+								"It is a special mode of antivirus.",
+								"None of the mentioned."
+							],
+							"correct_answers": ["It is program that is controlled or emulated section of OS."],
+							"section": "628df35acf4d68da627380c7",
+							"createdAt": "2022-05-25T09:50:33.832Z",
+							"__v": 0,
+							"id": "628dfbe9cf4d68da62738129"
+						},
+						{
+							"_id": "628dfdc5cf4d68da6273815c",
+							"question": "What does Light Directory Access Protocol (LDAP) doesn’t store?",
+							"answers": ["Users.", "Address.", "Passwords.", "Security Keys."],
+							"correct_answers": ["Address."],
+							"section": "628df35acf4d68da627380c7",
+							"createdAt": "2022-05-25T09:58:29.008Z",
+							"__v": 0,
+							"id": "628dfdc5cf4d68da6273815c"
+						}
+					],
+					"id": "628df35acf4d68da627380c7"
+				}
+			],
+			"id": "628df31fcf4d68da627380be"
+		},
+		{
+			"_id": "628dff99cf4d68da62738186",
+			"title": "Non-Technical Test",
+			"timer": 2,
+			"videoUrl": "",
+			"isTraining": false,
+			"createdAt": "2022-05-25T10:06:17.825Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "628dffedcf4d68da6273818f",
+					"title": "Numerical Training Test",
+					"timer": 2,
+					"instruction": "Read Carefully",
+					"test": "628dff99cf4d68da62738186",
+					"createdAt": "2022-05-25T10:07:41.418Z",
+					"__v": 0,
+					"questions": [
+						{
+							"_id": "628e0358cf4d68da62738253",
+							"question": "After his girlfriend left him, his boss was the......... of his worries.",
+							"answers": ["less", "least", "fewer", "last"],
+							"correct_answers": ["fewer"],
+							"section": "628dffedcf4d68da6273818f",
+							"createdAt": "2022-05-25T10:22:16.577Z",
+							"__v": 0,
+							"id": "628e0358cf4d68da62738253"
+						},
+						{
+							"_id": "628e08abcf4d68da62738352",
+							"question": "That was a horrible thing to say. I think you......... apologize.",
+							"answers": ["need", "have", "should have", "ought to"],
+							"correct_answers": ["ought to"],
+							"section": "628dffedcf4d68da6273818f",
+							"createdAt": "2022-05-25T10:44:59.028Z",
+							"__v": 0,
+							"id": "628e08abcf4d68da62738352"
+						},
+						{
+							"_id": "628e091ecf4d68da6273836d",
+							"question": "Multiple 60 X 3 + 7 ",
+							"answers": ["108", "186", "190", "187"],
+							"correct_answers": ["187"],
+							"section": "628dffedcf4d68da6273818f",
+							"createdAt": "2022-05-25T10:46:54.473Z",
+							"__v": 0,
+							"id": "628e091ecf4d68da6273836d"
+						},
+						{
+							"_id": "628e0a16cf4d68da62738395",
+							"question": "I wouldn’t mind …………….. tonight.",
+							"answers": ["to go out", "go out", "going out", "to going out"],
+							"correct_answers": ["going out"],
+							"section": "628dffedcf4d68da6273818f",
+							"createdAt": "2022-05-25T10:51:02.979Z",
+							"__v": 0,
+							"id": "628e0a16cf4d68da62738395"
+						},
+						{
+							"_id": "628e0b16cf4d68da627383a8",
+							"question": "Divide 200 into 6 and Add 4 into it.",
+							"answers": ["60", "34.44", "54.46", "54"],
+							"correct_answers": ["54"],
+							"section": "628dffedcf4d68da6273818f",
+							"createdAt": "2022-05-25T10:55:18.436Z",
+							"__v": 0,
+							"id": "628e0b16cf4d68da627383a8"
+						}
+					],
+					"id": "628dffedcf4d68da6273818f"
+				}
+			],
+			"id": "628dff99cf4d68da62738186"
+		},
+		{
+			"_id": "62cfe89c17aab8afed51dd18",
+			"title": "Test 2",
+			"timer": 0,
+			"isTraining": false,
+			"createdAt": "2022-07-14T09:57:48.519Z",
+			"__v": 0,
+			"sections": [],
+			"id": "62cfe89c17aab8afed51dd18"
+		},
+		{
+			"_id": "62cfee1917aab8afed51de0e",
+			"title": "Test 3",
+			"timer": 2,
+			"videoUrl": "",
+			"isTraining": false,
+			"createdAt": "2022-07-14T10:21:13.003Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cfee6817aab8afed51de18",
+					"title": "Test Student",
+					"timer": 2,
+					"instruction": "Read Carefully",
+					"test": "62cfee1917aab8afed51de0e",
+					"createdAt": "2022-07-14T10:22:32.431Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cfee6817aab8afed51de18"
+				}
+			],
+			"id": "62cfee1917aab8afed51de0e"
+		},
+		{
+			"_id": "62cff0b017aab8afed51deee",
+			"title": "Test 4",
+			"timer": 2,
+			"videoUrl": "N3AkSS5hXMA",
+			"isTraining": true,
+			"createdAt": "2022-07-14T10:32:16.565Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cff0dd17aab8afed51df1e",
+					"title": "React Course",
+					"timer": 2,
+					"instruction": "Read and Watch the Video Carefully",
+					"test": "62cff0b017aab8afed51deee",
+					"createdAt": "2022-07-14T10:33:01.765Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff0dd17aab8afed51df1e"
+				}
+			],
+			"id": "62cff0b017aab8afed51deee"
+		},
+		{
+			"_id": "62cff34617aab8afed51e745",
+			"title": "Religion",
+			"timer": 1,
+			"isTraining": false,
+			"createdAt": "2022-07-14T10:43:18.558Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cff3b317aab8afed51e783",
+					"title": "Christians",
+					"timer": 1,
+					"instruction": "Show all working",
+					"test": "62cff34617aab8afed51e745",
+					"createdAt": "2022-07-14T10:45:07.566Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff3b317aab8afed51e783"
+				}
+			],
+			"id": "62cff34617aab8afed51e745"
+		},
+		{
+			"_id": "62cff6a217aab8afed51e91f",
+			"title": "Test6",
+			"timer": 1,
+			"videoUrl": "",
+			"isTraining": false,
+			"createdAt": "2022-07-14T10:57:38.688Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cff6bf17aab8afed51e929",
+					"title": "Paulo",
+					"timer": 1,
+					"instruction": "Look Well",
+					"test": "62cff6a217aab8afed51e91f",
+					"createdAt": "2022-07-14T10:58:07.581Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff6bf17aab8afed51e929"
+				}
+			],
+			"id": "62cff6a217aab8afed51e91f"
+		},
+		{
+			"_id": "62cff71717aab8afed51e93c",
+			"title": "English ",
+			"timer": 3,
+			"isTraining": false,
+			"createdAt": "2022-07-14T10:59:35.284Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cff73217aab8afed51e946",
+					"title": "Oral",
+					"timer": 1,
+					"instruction": "Pronounce and answer",
+					"test": "62cff71717aab8afed51e93c",
+					"createdAt": "2022-07-14T11:00:02.571Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff73217aab8afed51e946"
+				},
+				{
+					"_id": "62cff8a417aab8afed51e9cf",
+					"title": "Essay writing",
+					"timer": 2,
+					"instruction": "Up to 500 words",
+					"test": "62cff71717aab8afed51e93c",
+					"createdAt": "2022-07-14T11:06:12.127Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff8a417aab8afed51e9cf"
+				}
+			],
+			"id": "62cff71717aab8afed51e93c"
+		},
+		{
+			"_id": "62cff84017aab8afed51e9a9",
+			"title": "Sociology",
+			"timer": 1,
+			"isTraining": false,
+			"createdAt": "2022-07-14T11:04:32.044Z",
+			"__v": 0,
+			"sections": [
+				{
+					"_id": "62cff86317aab8afed51e9b3",
+					"title": "history",
+					"timer": 1,
+					"instruction": "answer 2 out of 5",
+					"test": "62cff84017aab8afed51e9a9",
+					"createdAt": "2022-07-14T11:05:07.781Z",
+					"__v": 0,
+					"questions": [],
+					"id": "62cff86317aab8afed51e9b3"
+				}
+			],
+			"id": "62cff84017aab8afed51e9a9"
+		}
+	]
+}
