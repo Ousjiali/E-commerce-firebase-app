@@ -1,0 +1,152 @@
+.detailsAd__Container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+
+.detailsAd__Container svg {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.detailsAd__Content {
+  padding: 1rem;
+  /* background-color: whitesmoke; */
+  width: 65%;
+  margin-left: 18%;
+  padding: 1rem;
+  /* overflow-y: scroll; */
+}
+
+.detailsAd__Headline {
+  display: flex;
+  color: black;
+}
+
+.strapy__postAdInput11 {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 3%;
+  grid-row-gap: 15px;
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+}
+
+.strapy__postAdInput11 input {
+  width: 93%;
+  height: 2.5rem;
+  outline-color: blueviolet;
+  border: none;
+  background: white;
+  padding: 0.5rem 1rem;
+  outline-color: peru;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+/* .strapy__postAdlabel {
+  margin-top: 10px;
+} */
+
+.strapy__postAdInput11 select {
+  width: 100%;
+  height: 3.5rem;
+  outline-color: peru;
+  border: none;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  margin-bottom: 15px;
+}
+
+.strapy__postAdlabel11 textarea {
+  width: 95%;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: none;
+  outline-color: peru;
+  height: 80px;
+  margin-left: 1%;
+}
+
+.strapy__postAdlabel11 label {
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+
+.details__btn {
+  margin-left: -10px;
+}
+
+@media (max-width: 420px) and (max-width: 768px) {
+  .strapy__postAdInput11 {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 90%;
+  }
+  .detailsAd__Content {
+    display: grid;
+    margin-left: 1%;
+    /* overflow-y: scroll; */
+  }
+  .detailsAd__Container {
+    width: 100%;
+    display: flex;
+    height: auto;
+    background: linear-gradient(
+        0.5deg,
+        rgba(0, 0, 0, 0.6) 20.24%,
+        rgba(154, 25, 140, 0) 103.92%
+      ),
+      url("../../assets/strapyLog2.png"), no-repeat;
+    background-size: cover;
+  }
+  .strapy__postAdInput11 input {
+    width: 250px;
+    height: 31px;
+    outline-color: blueviolet;
+    border: none;
+    background: white;
+    padding: 3px 18px;
+    outline-color: peru;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+  .strapy__postAdInput11 select {
+    width: 283px;
+    height: 35px;
+    outline-color: peru;
+    border: none;
+    background: white;
+    padding: 3px 18px;
+    border-radius: 10px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    /* margin-bottom: 15px; */
+  }
+
+  .details__btn {
+    margin-left: -5px;
+  }
+  .details__btn button {
+    padding: 0.5rem 2.5rem;
+  }
+}

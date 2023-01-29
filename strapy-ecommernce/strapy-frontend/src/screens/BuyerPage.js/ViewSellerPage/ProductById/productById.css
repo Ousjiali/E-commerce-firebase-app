@@ -1,0 +1,156 @@
+.strapy__displayContanier {
+  display: flex;
+  padding: 1rem;
+}
+
+.strapy__displayProductId {
+  padding: 1.5rem;
+  width: 70%;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  height: auto;
+}
+
+.strapy__displayPic {
+  /* padding-top: 2rem; */
+  display: flex;
+  flex-direction: row;
+}
+
+.strapy__displayPic img {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.strapy__displayPicrole {
+  display: flex;
+  padding: 0.5%;
+  width: 100%;
+  gap: 3%;
+}
+
+.strapy__displayPicrole img {
+  height: 150px;
+  /* width: 20%; */
+  border-radius: 15px;
+}
+
+.strapy__displayCheckOut {
+  display: flex;
+  padding: 1rem;
+  /* display: grid; */
+  background-color: whitesmoke;
+  height: 200px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-left: 3%;
+  border-radius: 15px;
+}
+
+.strapy__displayCheckOut span {
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.strapy__displayCheckOut button {
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 26px;
+  border: none;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+.strapy__displayCheckOut button:hover {
+  background-color: rgb(179, 8, 179);
+}
+
+.starpy__displayContent {
+  display: grid;
+  padding: 1.5rem;
+  background: white;
+  color: rgb(137, 131, 131);
+  /* width: 67%; */
+  grid-template-columns: 32% 32%;
+  flex-direction: row;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.strapyGridbox__allContent header {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.strapyGrid__titleContent p {
+  font-size: 15px;
+  margin-top: 4px;
+}
+.strapy__displayContent2 {
+  width: 30%;
+}
+
+.strapy__displayRight {
+  padding: 1rem;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-left: 3%;
+  min-height: 40%;
+  border-radius: 15px;
+  color: rgb(137, 131, 131);
+}
+
+@media (max-width: 420px) {
+  .strapy__displayContanier {
+    display: grid;
+    margin-left: 1%;
+    /* padding: 1rem; */
+  }
+  .strapy__displayProductId {
+    /* padding: 1rem; */
+    width: 50%;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    height: auto;
+    /* display: grid; */
+  }
+
+  .strapy__displayPic img {
+    height: 250px;
+  }
+
+  .strapy__displayPicrole img {
+    height: 100px;
+  }
+  .strapy__displayPicrole {
+    overflow-x: scroll;
+  }
+
+  .starpy__displayContent {
+    display: grid;
+    grid-template-columns: 70%;
+  }
+  .strapy__displayContent2 {
+    display: grid;
+  }
+
+  .strapy__displayRight {
+    width: 87%;
+  }
+
+  .strapy__displayCheckOut {
+    width: 270px;
+    margin-top: 20px;
+  }
+  .strapyGridbox__allContent header {
+    font-size: 12px;
+  }
+
+  .strapyGrid__titleName p {
+    font-size: 13px;
+  }
+}

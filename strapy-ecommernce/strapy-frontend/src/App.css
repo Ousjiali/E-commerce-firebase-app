@@ -1,0 +1,10 @@
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+/* .content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+} */

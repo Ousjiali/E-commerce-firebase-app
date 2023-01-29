@@ -1,0 +1,3 @@
+- make background darker
+- increase button size
+- make don't have an account smaller

@@ -1,0 +1,313 @@
+.strapy__postAd {
+  padding: 1rem;
+  background: linear-gradient(
+      0.5deg,
+      rgba(0, 0, 0, 0.6) 20.24%,
+      rgba(154, 25, 140, 0) 103.92%
+    ),
+    url("../../assets/strapyHomepic.jpg"), no-repeat;
+  background-size: cover;
+  height: 95.7vh;
+}
+
+.strapy__postHeadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strapy__postHeadline h3 {
+  color: whitesmoke;
+}
+
+.strapy__postAdContainer {
+  display: grid;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-left: 13%;
+  /* margin-top: 5px; */
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.strapy__postAdInput2 {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 3%;
+  grid-row-gap: 15px;
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+}
+
+.strapy__postAdInput2 input {
+  width: 93%;
+  height: 2.5rem;
+  outline-color: blueviolet;
+  border: none;
+  background: white;
+  padding: 0.5rem 1rem;
+  outline-color: peru;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.strapy__posrAdlabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.strapy__postAdlabel label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.strapy__postAdInput2 select {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  outline-color: blueviolet;
+  border: none;
+  background: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  margin-bottom: 15px;
+}
+.strapy__imagePic {
+  /* width: 100%; */
+  display: flex;
+  /* flex-direction: row; */
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: purple;
+  padding: 1em 3em;
+  border: thin solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.strapy__uploadFile {
+  margin-left: 18px;
+}
+
+.strapy__uploadFile button {
+  padding: 0.6rem 2rem;
+  background-color: purple;
+  color: whitesmoke;
+  border-radius: 15px;
+  border: none;
+  outline-color: blueviolet;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.strapy__uploadFile svg {
+  font-size: 50px;
+  color: red;
+}
+
+.strapy__postAdContainer img {
+  width: 170px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.strapy__imagePic svg {
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: gray;
+}
+
+.uploadBtn {
+  padding: 1rem 3rem;
+  background-color: purple;
+  border-radius: 26px;
+  border: none;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.stb__Btn {
+  background-color: purple;
+  border-radius: 15px;
+}
+
+@media (max-width: 420px) {
+  /* .strapy__postAd {
+    padding: 1rem;
+    background: linear-gradient(
+        0.5deg,
+        rgba(0, 0, 0, 0.6) 20.24%,
+        rgba(154, 25, 140, 0) 103.92%
+      ),
+      url("../../assets/strapyHomepic.jpg"), no-repeat;
+    background-size: cover;
+    height: auto;
+  } */
+
+  .strapy__postAdContainer label {
+    margin-bottom: 50px;
+    font-size: 12.5px;
+    color: black;
+  }
+
+  .strapy__postAdInput2 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 90%;
+    margin-left: 15px;
+  }
+
+  .strapy__postHeadline h3 {
+    color: black;
+  }
+
+  .strapy__postAdInput2 input {
+    width: 88%;
+    height: 31px;
+    outline-color: blueviolet;
+    border: none;
+    background: white;
+    padding: 5px 18px;
+    outline-color: peru;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+
+  .strapy__postAdlabel {
+    margin-top: -2%;
+  }
+
+  .strapy__postAdContainer {
+    display: grid;
+    border-radius: 10px;
+    margin-left: -8%;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .strapy__postHeadline {
+    display: flex;
+  }
+
+  .strapy__uploadFile {
+    margin-top: 40px;
+    margin-left: 44px;
+  }
+
+  .strapy__uploadFile button {
+    margin-top: 30px;
+  }
+
+  .strapy__imagePic {
+    margin-left: 45px;
+  }
+  .stb__BtnContainer {
+    margin-left: 25px;
+  }
+
+  .strapy__postAdInput2 select {
+    width: 100%;
+    height: 41px;
+    outline: none;
+    outline-color: peru;
+    background-color: red;
+    border: none;
+    background: white;
+    padding: 5px 18px;
+    border-radius: 10px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 760px) {
+  .strapy__postAd {
+    padding: 1rem;
+    background: linear-gradient(
+        0.5deg,
+        rgba(0, 0, 0, 0.6) 20.24%,
+        rgba(154, 25, 140, 0) 103.92%
+      ),
+      url("../../assets/strapyHomepic.jpg"), no-repeat;
+    background-size: cover;
+  }
+
+  .strapy__postHeadline h3 {
+    color: black;
+  }
+
+  .strapy__postAdContainer {
+    display: grid;
+    border-radius: 10px;
+    margin-left: -3%;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .strapy__postAdContainer label {
+    margin-bottom: 50px;
+    font-size: 12.5px;
+    color: black;
+  }
+
+  .strapy__postAdInput2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 90%;
+  }
+  .strapy__postAdInput2 input {
+    width: 88%;
+    height: 2.5rem;
+    outline-color: blueviolet;
+    border: none;
+    background: white;
+    padding: 3px 17px;
+    height: 35px;
+    line-height: normal;
+    outline-color: peru;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+  .strapy__uploadFile {
+    margin-top: 40px;
+    margin-left: 44px;
+  }
+  .strapy__uploadFile button {
+    margin-top: 30px;
+  }
+  .strapy__imagePic {
+    margin-left: 45px;
+  }
+  .stb__BtnContainer {
+    margin-left: 30px;
+  }
+}

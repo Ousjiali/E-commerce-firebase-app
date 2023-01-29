@@ -1,0 +1,189 @@
+.strapy__landingPage {
+  padding: 1rem;
+  background: linear-gradient(
+      0.5deg,
+      rgba(0, 0, 0, 0.6) 20.24%,
+      rgba(154, 25, 140, 0) 103.92%
+    ),
+    url("../../../assets/strapyHomepic.jpg"), no-repeat;
+  background-size: cover;
+  height: 95.7vh;
+}
+
+.strapy__FormContainer {
+  display: grid;
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+.strapy__title {
+  color: whitesmoke;
+}
+
+.strapy__title h1 {
+  font-size: 50px;
+}
+
+.strapy__title h3 {
+  font-size: 30px;
+}
+
+.strapy__title b {
+  color: purple;
+}
+
+.strapy__inputBox1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.strapy__inputBox1 input {
+  padding: 1rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+  outline-color: peru;
+  border: none;
+}
+
+.strapy__title h3 {
+  margin-top: -2%;
+}
+
+.strapy__inputBox1 label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.strapy__createAccount a {
+  /* text-decoration: none; */
+  color: whitesmoke;
+}
+
+.strapy__createAccount {
+  margin-top: 20px;
+}
+
+.stb__BtnContainer1 {
+  margin-top: 30px;
+}
+
+.stb__Btn {
+  padding: 0.5rem 3rem;
+  background-color: blueviolet;
+  color: whitesmoke;
+  border-radius: 26px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.stb__Btn:hover {
+  transform: scale(1.2);
+}
+
+/* phone */
+@media (max-width: 400px) {
+  .strapy__FormContainer {
+    display: grid;
+    margin-top: 2%;
+    margin-left: 2%;
+    /* background-color: red; */
+  }
+
+  .stb__Btn {
+    margin-left: 5%;
+  }
+  .strapy__inputBox1 {
+    width: 80%;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+
+  .strapy__inputContainer {
+    margin-left: 5%;
+  }
+
+  .strapy__title {
+    color: whitesmoke;
+    margin-bottom: 50px;
+  }
+  .strapy__title h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .strapy__title h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .strapy__createAccount {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5%;
+  }
+}
+
+/* .tablet-portrait-up  */
+
+@media (min-width: 400px) and (max-width: 760px) {
+  .strapy__title h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 5%;
+    /* background-color: red; */
+  }
+
+  .strapy__title h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-right: 5%;
+  }
+
+  .strapy__inputBox1 {
+    width: 80%;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    /* margin-left: 3%; */
+  }
+
+  .strapy__title {
+    color: whitesmoke;
+    margin-bottom: 70px;
+    /* margin-left: 2%; */
+  }
+
+  .strapy__createAccount {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    /* margin-left: 2%; */
+  }
+}
+
+@media (min-width: 900px) {
+}
+/* tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* .desktop-up */
+@media (min-width: 1300px) {
+}
+/* desktop-only */
+@media (min-width: 1300px) and (max-width: 1799px) {
+}
+
+/* big-desktop-up */
+@media (min-width: 1800px) {
+}

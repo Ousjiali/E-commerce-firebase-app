@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+.strapy__clients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.seller__btn {
+  padding: 1rem 4rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid green;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: transform 0.5s;
+}
+
+.seller__btn:hover {
+  transform: scale(1.2);
+}
+
+.buyer__btn {
+  padding: 1rem 4rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid peru;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: transform 0.5s;
+}
+
+.buyer__btn:hover {
+  transform: scale(1.2);
+}
+
+.header__linkContainer {
+  display: flex;
+  background-color: teal;
+  height: 60px;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.header__linkContainer a {
+  text-decoration: none;
+}
+
+.header__login h3 {
+  margin-right: 30px;
+  margin-top: 17px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 200;
+}
+
+.header__login {
+  display: flex;
+}
+
+.header__linkContainer svg {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.header__linkContainer h2 {
+  margin-left: 30px;
+  display: flex;
+  color: whitesmoke;
+}
+
+.header__title {
+  margin-top: -10px;
+}
+
+/* Extrenal-CSS */
